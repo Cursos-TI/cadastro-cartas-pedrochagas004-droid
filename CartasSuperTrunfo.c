@@ -11,19 +11,17 @@ int main() {
 
     printf("--- CADASTRO DE CARTAS: SUPER TRUNFO ---\n\n");
 
-    // Lendo o Estado (Apenas uma letra)
     printf("Digite a letra do Estado (A-H):\n");
     scanf(" %c", &estado);
 
-    // Lendo o Codigo
     printf("Digite o codigo da carta (ex: A01):\n");
     scanf("%s", codigo);
 
-    // Lendo o Nome da Cidade (Pode conter espaços agora!)
     printf("Digite o nome da cidade:\n");
+    // O pulo do gato: %[^\n] faz o C ler o nome inteiro com espaços!
     scanf(" %[^\n]s", nomeCidade); 
 
-    printf("Digite a populacao:\n");
+    printf("Digite a populacao (use apenas numeros, sem pontos):\n");
     scanf("%d", &populacao);
 
     printf("Digite a area (km2):\n");
@@ -35,7 +33,6 @@ int main() {
     printf("Digite o numero de pontos turisticos:\n");
     scanf("%d", &pontosTuristicos);
 
-    // EXIBICAO DOS DADOS (Um por linha, bem organizado)
     printf("\n===============================\n");
     printf("ESTADO: %c\n", estado);
     printf("CODIGO: %s\n", codigo);
