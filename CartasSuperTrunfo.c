@@ -1,47 +1,72 @@
 #include <stdio.h>
 
 int main() {
-    char estado;
-    char codigo[5];
-    char nomeCidade[50];
-    int populacao;
-    float area;
-    float pib;
-    int pontosTuristicos;
+    // --- VARIÁVEIS CARTA 1 ---
+    char estado1;
+    char codigo1[5];
+    char nomeCidade1[50];
+    int populacao1;
+    float area1, pib1;
+    int pontosTuristicos1;
 
-    printf("--- CADASTRO DE CARTAS: SUPER TRUNFO ---\n\n");
+    // --- VARIÁVEIS CARTA 2 ---
+    char estado2;
+    char codigo2[5];
+    char nomeCidade2[50];
+    int populacao2;
+    float area2, pib2;
+    int pontosTuristicos2;
 
-    printf("Digite a letra do Estado (A-H):\n");
-    scanf(" %c", &estado);
+    // (Você pode criar as variáveis para a 3 e 4 aqui embaixo seguindo o mesmo padrão)
 
-    printf("Digite o codigo da carta (ex: A01):\n");
-    scanf("%s", codigo);
+    // --- CADASTRO DA CARTA 1 ---
+    printf("--- CADASTRO DA CARTA 1 ---\n");
+    printf("Estado (A-H): ");
+    scanf(" %c", &estado1);
+    printf("Codigo: ");
+    scanf("%s", codigo1);
+    printf("Nome da Cidade: ");
+    scanf(" %[^\n]s", nomeCidade1);
+    printf("Populacao: ");
+    scanf("%d", &populacao1);
+    printf("Area: ");
+    scanf("%f", &area1);
+    printf("PIB: ");
+    scanf("%f", &pib1);
+    printf("Pontos Turisticos: ");
+    scanf("%d", &pontosTuristicos1);
 
-    printf("Digite o nome da cidade:\n");
-    // O pulo do gato: %[^\n] faz o C ler o nome inteiro com espaços!
-    scanf(" %[^\n]s", nomeCidade); 
+    // --- CADASTRO DA CARTA 2 ---
+    printf("\n--- CADASTRO DA CARTA 2 ---\n");
+    printf("Estado (A-H): ");
+    scanf(" %c", &estado2);
+    printf("Codigo: ");
+    scanf("%s", codigo2);
+    printf("Nome da Cidade: ");
+    scanf(" %[^\n]s", nomeCidade2);
+    printf("Populacao: ");
+    scanf("%d", &populacao2);
+    printf("Area: ");
+    scanf("%f", &area2);
+    printf("PIB: ");
+    scanf("%f", &pib2);
+    printf("Pontos Turisticos: ");
+    scanf("%d", &pontosTuristicos2);
 
-    printf("Digite a populacao (use apenas numeros, sem pontos):\n");
-    scanf("%d", &populacao);
-
-    printf("Digite a area (km2):\n");
-    scanf("%f", &area);
-
-    printf("Digite o PIB (bilhoes):\n");
-    scanf("%f", &pib);
-
-    printf("Digite o numero de pontos turisticos:\n");
-    scanf("%d", &pontosTuristicos);
+    // --- EXIBIÇÃO DOS DADOS ---
+    printf("\n===============================\n");
+    printf("CARTA 1: %s\n", nomeCidade1);
+    printf("Estado: %c - Codigo: %s\n", estado1, codigo1);
+    printf("Populacao: %d\n", populacao1);
+    printf("Area: %.2f km2 - PIB: %.2f bilhoes\n", area1, pib1);
+    printf("Pontos Turisticos: %d\n", pontosTuristicos1);
 
     printf("\n===============================\n");
-    printf("ESTADO: %c\n", estado);
-    printf("CODIGO: %s\n", codigo);
-    printf("NOME DA CIDADE: %s\n", nomeCidade);
-    printf("POPULACAO: %d\n", populacao);
-    printf("AREA: %.2f km2\n", area);
-    printf("PIB: %.2f bilhoes\n", pib);
-    printf("PONTOS TURISTICOS: %d\n", pontosTuristicos);
-    printf("===============================\n");
+    printf("CARTA 2: %s\n", nomeCidade2);
+    printf("Estado: %c - Codigo: %s\n", estado2, codigo2);
+    printf("Populacao: %d\n", populacao2);
+    printf("Area: %.2f km2 - PIB: %.2f bilhoes\n", area2, pib2);
+    printf("Pontos Turisticos: %d\n", pontosTuristicos2);
 
     return 0;
 }
