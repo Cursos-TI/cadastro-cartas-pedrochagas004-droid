@@ -5,34 +5,37 @@ int main() {
     char codigo[5];
     char nomeCidade[50];
     int populacao;
-    float area, pib;
+    float area;
+    float pib;
     int pontosTuristicos;
 
-    printf("--- CADASTRO DE CARTAS ---\n\n");
+    printf("--- CADASTRO DE CARTAS: SUPER TRUNFO ---\n\n");
 
-    printf("Digite a letra do Estado (A-H): \n");
+    // Lendo o Estado (Apenas uma letra)
+    printf("Digite a letra do Estado (A-H):\n");
     scanf(" %c", &estado);
 
-    printf("Digite o codigo da carta (ex: A01): \n");
+    // Lendo o Codigo
+    printf("Digite o codigo da carta (ex: A01):\n");
     scanf("%s", codigo);
 
-    printf("Digite o nome da cidade: \n");
-    // O comando abaixo permite ler nomes com espaços (como Rio de Janeiro)
+    // Lendo o Nome da Cidade (Pode conter espaços agora!)
+    printf("Digite o nome da cidade:\n");
     scanf(" %[^\n]s", nomeCidade); 
 
-    printf("Digite a populacao: \n");
+    printf("Digite a populacao:\n");
     scanf("%d", &populacao);
 
-    printf("Digite a area (km2): \n");
+    printf("Digite a area (km2):\n");
     scanf("%f", &area);
 
-    printf("Digite o PIB: \n");
+    printf("Digite o PIB (bilhoes):\n");
     scanf("%f", &pib);
 
-    printf("Digite o numero de pontos turisticos: \n");
+    printf("Digite o numero de pontos turisticos:\n");
     scanf("%d", &pontosTuristicos);
 
-    // EXIBIÇÃO ORGANIZADA
+    // EXIBICAO DOS DADOS (Um por linha, bem organizado)
     printf("\n===============================\n");
     printf("ESTADO: %c\n", estado);
     printf("CODIGO: %s\n", codigo);
