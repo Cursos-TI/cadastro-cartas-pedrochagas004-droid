@@ -4,19 +4,19 @@
 // Tema 1 - Cadastro das cartas
 // Objetivo: No nível novato você deve criar as cartas representando as cidades utilizando scanf para entrada de dados e printf para exibir as informações.
 
-int main() {
- #include <stdio.h>
+#include <stdio.h>
 
 int main() {
-    // Variáveis para a primeira carta
-    char estado;              // Ex: 'A'
-    char codigo[4];           // Ex: "A01"
-    char nomeCidade[50];      // Ex: "Rio de Janeiro"
-    int populacao;            // Números inteiros
-    float area;               // Números com vírgula (km²)
-    float pib;                // Números com vírgula (Dinheiro)
-    int pontosTuristicos;     // Números inteiros]
+    // Definindo as variáveis para a primeira carta
+    char estado;
+    char codigo[4];
+    char nomeCidade[50];
+    int populacao;
+    float area;
+    float pib;
+    int pontosTuristicos;
 
+    // Cadastro da Carta
     printf("Digite a letra do Estado (A-H): ");
     scanf(" %c", &estado);
 
@@ -24,23 +24,32 @@ int main() {
     scanf("%s", codigo);
 
     printf("Digite o nome da cidade: ");
-    scanf(" %[^\n]s", nomeCidade); // Esse comando estranho lê nomes com espaços!
+    scanf(" %s", nomeCidade);
 
-    printf("Populacao: ");
+    printf("Digite a populacao: ");
     scanf("%d", &populacao);
 
-    printf("Area (km2): ");
+    printf("Digite a area (km2): ");
     scanf("%f", &area);
 
-    printf("PIB: ");
+    printf("Digite o PIB: ");
     scanf("%f", &pib);
 
-    printf("Pontos turisticos: ");
+    printf("Digite o numero de pontos turisticos: ");
     scanf("%d", &pontosTuristicos);
+
+    // Exibição dos dados
+    printf("\n--- Dados da Carta ---\n");
+    printf("Estado: %c\n", estado);
+    printf("Codigo: %s\n", codigo);
+    printf("Nome da Cidade: %s\n", nomeCidade);
+    printf("Populacao: %d\n", populacao);
+    printf("Area: %.2f km2\n", area);
+    printf("PIB: %.2f bilhoes\n", pib);
+    printf("Pontos Turisticos: %d\n", pontosTuristicos);
+
+    return 0;
 }
-
-
-  // Área para exibição dos dados da cidade
 
 return 0;
 } 
