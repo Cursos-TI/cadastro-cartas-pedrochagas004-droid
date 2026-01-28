@@ -2,33 +2,25 @@
 
 int main() {
     // --- VARIÁVEIS CARTA 1 ---
-    char estado1;
-    char codigo1[5];
-    char nomeCidade1[50];
+    char estado1, codigo1[5], nomeCidade1[50], nome1[50];
     int populacao1;
     float area1, pib1;
     int pontosTuristicos1;
 
     // --- VARIÁVEIS CARTA 2 ---
-    char estado2;
-    char codigo2[5];
-    char nomeCidade2[50];
+    char estado2, codigo2[5], nomeCidade2[50], nome2[50];
     int populacao2;
     float area2, pib2;
     int pontosTuristicos2;
 
     // --- VARIÁVEIS CARTA 3 ---
-    char estado3;
-    char codigo3[5];
-    char nomeCidade3[50];
+    char estado3, codigo3[5], nomeCidade3[50], nome3[50];
     int populacao3;
     float area3, pib3;
     int pontosTuristicos3;
 
      // --- VARIÁVEIS CARTA 4 ---
-    char estado4;
-    char codigo4[5];
-    char nomeCidade4[50];
+    char estado4, codigo4[5], nomeCidade4[50], nome4[50];
     int populacao4;
     float area4, pib4;
     int pontosTuristicos4;
