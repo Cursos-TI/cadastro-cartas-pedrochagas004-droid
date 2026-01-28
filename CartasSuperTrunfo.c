@@ -130,6 +130,20 @@ int main() {
     printf("Area: %.2f km2 - PIB: %.2f bilhoes\n", area4, pib4);
     printf("Pontos Turisticos: %d\n", pontosTuristicos4);
 
+    // --- CÁLCULOS ---
+    densidade1 = (float)pop1 / area1; pibCapita1 = (pib1 * 1000000000) / (float)pop1;
+    densidade2 = (float)pop2 / area2; pibCapita2 = (pib2 * 1000000000) / (float)pop2;
+    densidade3 = (float)pop3 / area3; pibCapita3 = (pib3 * 1000000000) / (float)pop3;
+    densidade4 = (float)pop4 / area4; pibCapita4 = (pib4 * 1000000000) / (float)pop4;
+
+    // --- EXIBIÇÃO ---
+    printf("\n--- RESULTADO: SUPER TRUNFO ---\n");
+    
+    printf("\nCARTA 1: %s (%s)\nDensidade: %.2f hab/km2 | PIB per Capita: R$ %.2f\n", nome1, codigo1, densidade1, pibCapita1);
+    printf("CARTA 2: %s (%s)\nDensidade: %.2f hab/km2 | PIB per Capita: R$ %.2f\n", nome2, codigo2, densidade2, pibCapita2);
+    printf("CARTA 3: %s (%s)\nDensidade: %.2f hab/km2 | PIB per Capita: R$ %.2f\n", nome3, codigo3, densidade3, pibCapita3);
+    printf("CARTA 4: %s (%s)\nDensidade: %.2f hab/km2 | PIB per Capita: R$ %.2f\n", nome4, codigo4, densidade4, pibCapita4);
+
     return 0;
 }
 
