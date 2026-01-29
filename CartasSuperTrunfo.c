@@ -144,6 +144,19 @@ int main() {
     printf("\nCARTA 4: %s (%s)\n", nomeCidade4, codigo4);
     printf("Densidade: %.2f hab/km2 | PIB por Capital: R$ %.2f\n", densidade4, pibCapita4);
 
+    // --- COMPARAÇÃO NÍVEL MESTRE (O VENCEDOR) ---
+    printf("\n=== RESULTADO DO SUPER TRUNFO (ATRIBUTO: PIB POR CAPITAL) ===\n");
+
+    if (pibCapita1 > pibCapita2 && pibCapita1 > pibCapita3 && pibCapita1 > pibCapita4) {
+        printf("VENCEDOR: %s (CARTA 1)\n", nomeCidade1);
+    } else if (pibCapita2 > pibCapita3 && pibCapita2 > pibCapita4) {
+        printf("VENCEDOR: %s (CARTA 2)\n", nomeCidade2);
+    } else if (pibCapita3 > pibCapita4) {
+        printf("VENCEDOR: %s (CARTA 3)\n", nomeCidade3);
+    } else {
+        printf("VENCEDOR: %s (CARTA 4)\n", nomeCidade4);
+    }
+
     return 0;
 }
 
